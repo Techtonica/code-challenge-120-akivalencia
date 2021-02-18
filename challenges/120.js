@@ -10,21 +10,21 @@
 // ```
 //
 // // Let's say you want to group your pomeranians by weight class.
-// pomeranians = [
-//   { name: 'Osito', weight_kg: 3.5 },
-//   { name: 'Maní', weight_kg: 3.9 },
-//   { name: 'Bella', weight_kg: 7.2 }
-// ]
-// groupBy(pomeranians, (p) => Math.floor(p.weight_kg))\
-// /*
-//  {
-//   '3': [
-//         { name: 'Osito', weight_kg: 3.5 },
-//         { name: 'Maní', weight_kg: 3.9 }
-//       ],
-//   '7': [{ name: 'Bella', weight_kg: 7.2 }]
-//  }
-// */
+pomeranians = [
+  { name: 'Osito', weight_kg: 3.5 },
+  { name: 'Maní', weight_kg: 3.9 },
+  { name: 'Bella', weight_kg: 7.2 }
+]
+groupBy(pomeranians, (p) => Math.floor(p.weight_kg))
+
+ {
+  '3': [
+        { name: 'Osito', weight_kg: 3.5 },
+        { name: 'Maní', weight_kg: 3.9 }
+      ],
+  '7': [{ name: 'Bella', weight_kg: 7.2 }]
+ }
+
 //
 //  // or string by their length
 // groupBy(['one', 'two', 'three'], (s) => s.length);
